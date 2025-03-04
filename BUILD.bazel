@@ -1,0 +1,16 @@
+cc_binary(
+    name = "calculator_lib",
+    srcs = [
+        "src/calculator_lib.cpp",
+        "include/calculator_lib.h"
+    ],
+    includes = ["include"],
+    defines = ["CALCULATOR_EXPORTS"],
+    copts = [
+        "/DWIN32",
+        "/D_WINDOWS",
+        "/MD",
+    ],
+    linkshared = True,
+    visibility = ["//visibility:public"],
+)

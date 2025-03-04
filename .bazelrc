@@ -1,0 +1,8 @@
+build:windows_x86 --compiler=msvc      # Using Microsoft Visual C++
+build:windows_x86 --action_env=BAZEL_VC="C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC" # Detailed MSVC installation location
+build:windows_x86 --action_env=BAZEL_VC_FULL_VERSION=14.42.34433 # Full MSVC version number
+build:windows_x86 --cxxopt=/std:c++14  # C++ version
+build:windows_x86 --copt=/DWIN32       # Define _WINDOWS macro
+build:windows_x86 --cpu=x86_windows    # Building for x86 arch
+build:windows_x86 --host_cpu=x86_windows    # Building for x86 arch
+build:windows_x86 --announce_rc
