@@ -15,7 +15,7 @@ This repository is linked as an example in discussions regarding Bazel repositor
 To build the project for x86 with Bazel on MSVC, use the following command from the root of this repository:
 
 ```shell
-bazel build --cpu=x86 //:calculator_lib
+bazel build --config=windows_x86 //:calculator_lib
 ```
 ### Verify the architecture of the resulting binary:
 
